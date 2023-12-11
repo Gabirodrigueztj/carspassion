@@ -33,8 +33,14 @@ width: 100%;
 }
 
 img {
+   
+    padding: 3px;
+    width: 450px; /* Puedes ajustar el valor según tus necesidades */
 
-max-width: 100%;
+    /* Establece la altura en píxeles */
+    height: 600px;
+object-fit: cover; /* Esto asegura que la imagen se
+muestre completamente dentro de su contenedor */
 }
 
 header{
@@ -60,7 +66,7 @@ main{
 
 .container-img{
     background-color: #f7f7f9;
-    flex: ;
+    
 
 
 }
@@ -128,9 +134,52 @@ color: #666;
     gap: 5px;
     font-weight: 700;
     cursor: pointer;
-
+    height: 40px;
+    width: 60%;
  }
  .btn-add-to-cart:hover{ 
     color: #1bbeb4;
  }
-  
+
+ .hidden{
+    display: none;
+}
+
+.container-description, .container-additional-information,
+.container-reviews{
+display: flex;
+flex-direction: column;
+border-bottom: 1px solid #e4e4e4;
+padding: 10px 0;
+
+}
+
+.title-description, .title-additional-information,
+.title-reviews{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+
+}
+
+.text-description, .text-additional-information,
+.text-reviews {
+    font-size: 13px;
+    color: #252525;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.title-description h4, .title-additional-information h4,
+.title-reviews h4{
+ font-weight: 300;
+color: #666;
+font-size: 14px;
+} 
+
+.container-elale{
+display: flex;
+flex-wrap: wrap;
+
+}
