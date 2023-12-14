@@ -72,7 +72,7 @@ main{
 }
 
 .container-info-product {
- flex: 1;
+ flex: 2;
  display: flex;
  flex-direction: column;
 }
@@ -145,8 +145,7 @@ color: #666;
     display: none;
 }
 
-.container-description, .container-additional-information,
-.container-reviews{
+.container-description, .container-additional-information {
 display: flex;
 flex-direction: column;
 border-bottom: 1px solid #e4e4e4;
@@ -171,15 +170,7 @@ padding: 10px 0;
     margin-top: 25px;
 }
 
-.title-description h4, .title-additional-information h4,
-.title-reviews h4{
+.title-description h4, .title-additional-information h4{
  font-weight: 300;
 color: #666;
-font-size: 14px;
-} 
-
-.container-elale{
-display: flex;
-flex-wrap: wrap;
-
-}
+font-size: 20px;}

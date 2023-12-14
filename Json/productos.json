@@ -1,0 +1,13 @@
+[
+    {
+      "id": 1,
+      "nombre": "Lamborghini Sesto Elemento",
+      "imagen": "Autos/Lamborghini Sesto Elemento/1.png",
+      "precio": "USD 2.500.000",
+      "colores": ["blanco", "negro", "rojo", "azul"],
+      "descripcion": "Lorem ipsum dolor sit amet...",
+      "informacion_adicional": "Información adicional sobre el vehículo..."
+    }
+    
+  ]
+  
