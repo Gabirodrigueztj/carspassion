@@ -1,34 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
 
-// JSON y FETCH
+  //*******************/
+  document.addEventListener("DOMContentLoaded", function () {
+    const productId = obtenerParametroDeURL("id");
+    if (productId) {
+        cargarDetallesDelProducto(productId);
+    }
+});
 
-    // Ruta al archivo JSON
+function obtenerParametroDeURL(parametro) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(parametro);
+}
+
+function cargarDetallesDelProducto(productId) {
     const jsonFilePath = "Json/productos.json";
-  
-    // Llamada a la función para cargar productos
-    cargarProductos(jsonFilePath);
-  });
-  
-  function cargarProductos(jsonFilePath) {
-    // Hacer una solicitud fetch para cargar el archivo JSON
     fetch(jsonFilePath)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(productos => {
-        // Obtener el contenedor de productos
-        const productosContainer = document.getElementById("productos-container");
-  
-        // Limpiar el contenedor antes de agregar nuevos productos
-        productosContainer.innerHTML = '';
-  
-        // Recorrer la lista de productos y mostrarlos en la página
-        productos.forEach(producto => {
-          // Crear elementos HTML para mostrar la información del producto
-          const productoHTML = `
+        .then(response => response.json())
+        .then(productos => {
+            const producto = productos.find(p => p.id === parseInt(productId));
+            if (producto) {
+                const productoDetalleContainer = document.getElementById("productos-container");
+                const productoHTML = `
             <div class="container-title"><h3>${producto.nombre}</h3></div>
             <div class="container-img">
               <img src="${producto.imagen}" alt="${producto.nombre}">
@@ -60,13 +52,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
             
             </div>
-          `;
-  
-          // Agregar el producto al contenedor
-          productosContainer.innerHTML += productoHTML;
-          //Toggle of infomation product
 
-// Toggle title
+            <div class="container">
+            <div class="gallery">
+
+                <a href="Autos/${producto.nombre}/1.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/1.png" alt="">
+                </a>
+                <a href="Autos/${producto.nombre}/2.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/2.png" alt="">
+                </a>
+                <a href="Autos/${producto.nombre}/3.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/3.png" alt="">
+                </a>
+                <a href="Autos/${producto.nombre}/4.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/4.png" alt="">
+                </a>
+
+
+            </div>
+
+        </div>
+          `;
+                productoDetalleContainer.innerHTML = productoHTML;
+            } else {
+                console.error("Producto no encontrado");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+
+        // Toggle title
 const toggleDescription = document.querySelector(".title-description")
 const toggleAdditionalInformation = document.querySelector(".title-additional-information")
 
@@ -83,11 +100,4 @@ toggleDescription.addEventListener("click", ()=> {
 toggleAdditionalInformation.addEventListener("click", ()=> {
     contentAdditionalInformation.classList.toggle("hidden");
 });
-
-        });
-      })
-      .catch(error => {
-        console.error("Error:", error);
-      });
-  }
-  
+} 

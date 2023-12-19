@@ -7,7 +7,16 @@
       "colores": ["blanco", "negro", "rojo", "azul"],
       "descripcion": "Lorem ipsum dolor sit amet...",
       "informacion_adicional": "Información adicional sobre el vehículo..."
-    }
-    
+    },
+  {
+    "id": 2,
+    "nombre": "Honda CRX",
+    "imagen": "Autos/Honda CRX/1.png",
+    "precio": "USD 15,000",
+    "colores": ["azul", "rojo", "amarillo", "verde"],
+    "descripcion": "El Honda CRX 1985 es un automóvil compacto y deportivo que ganó popularidad en la década de 1980. Con un diseño aerodinámico y características deportivas, el CRX es un clásico que sigue siendo apreciado por los entusiastas de los automóviles.",
+    "informacion_adicional": "El Honda CRX 1985 cuenta con un motor eficiente, diseño ligero y una experiencia de conducción divertida. Perfecto para aquellos que buscan un clásico con estilo y rendimiento."
+  }
+
   ]
   
