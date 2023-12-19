@@ -1,8 +1,8 @@
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -10,7 +10,6 @@ h2 {
     font-size: 35px;
     font-weight: bold;
     margin-top: 25px;
-
 }
 
 .container {
@@ -20,7 +19,7 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 50px 8%;
-    }
+}
 
 .gallery {
     display: grid;
@@ -28,102 +27,87 @@ h2 {
 }
 
 .gallery img {
-width: 100%;
-
+    width: 100%;
 }
 
 img {
-   
     padding: 3px;
-    width: 450px; /* Puedes ajustar el valor según tus necesidades */
-
-    /* Establece la altura en píxeles */
+    width: 450px;
     height: 600px;
-object-fit: cover; /* Esto asegura que la imagen se
-muestre completamente dentro de su contenedor */
+    object-fit: cover;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     padding: 30px;
     justify-content: center;
 }
 
-.container-title{
-padding: 30px;
-background-color: #eee;
-margin-bottom: 50px; 
-color: #222;
+.container-title {
+    padding: 30px;
+    background-color: #eee;
+    margin-bottom: 50px;
+    color: #222;
 }
 
-main{
-    display: flex;
-    gap: 30px;
-    margin-bottom: 80px;
-
-}
-
-.container-img{
+.container-img {
     background-color: #f7f7f9;
-    
-
-
 }
 
 .container-info-product {
- flex: 2;
- display: flex;
- flex-direction: column;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-price {
-padding-bottom: 20px;
-border-bottom: 1px solid #e4e4e4;
-display: flex;
-align-items: center;
-justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container-price span{
+.container-price span {
     font-size: 24px;
     font-weight: 300;
 }
 
-.container-details-product{
+.container-details-product {
     padding: 30px 0;
 }
 
-.form-group{
+.form-group {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 15px;
 }
 
-.form-group label{
-width: 100px;
-color:  #222;
-font-weight: 700;
+.form-group label {
+    width: 100px;
+    color: #222;
+    font-weight: 700;
 }
 
-.form-group select{
-width: 300px;
-border: none;
-padding: 12px 15px;
-background-color: #f7f7f7;
-outline: none;
-color: #666;
+.form-group select {
+    width: 300px;
+    border: none;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    outline: none;
+    color: #666;
 }
 
-.container-add-cart{
+.container-add-cart {
     display: flex;
     gap: 20px;
     padding-bottom: 30px;
     border-bottom: 1px solid #e4e4e4;
-    }
+}
 
- .btn-add-to-cart{
+.btn-add-to-cart {
     border: none;
     background-color: #252525;
     padding: 10px;
@@ -136,33 +120,39 @@ color: #666;
     cursor: pointer;
     height: 40px;
     width: 60%;
- }
- .btn-add-to-cart:hover{ 
-    color: #1bbeb4;
- }
+}
 
- .hidden{
+.btn-add-to-cart:hover {
+    color: #1bbeb4;
+}
+
+.hidden {
     display: none;
 }
 
-.container-description, .container-additional-information {
-display: flex;
-flex-direction: column;
-border-bottom: 1px solid #e4e4e4;
-padding: 10px 0;
-
+.container-description {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 0;
 }
 
-.title-description, .title-additional-information,
-.title-reviews{
- display: flex;
- align-items: center;
- justify-content: space-between;
- cursor: pointer;
-
+.container-additional-information {
+    display: flex;
+    flex-direction: column;
 }
 
-.text-description, .text-additional-information,
+.title-description,
+.title-additional-information,
+.title-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.text-description,
+.text-additional-information,
 .text-reviews {
     font-size: 13px;
     color: #252525;
@@ -170,7 +160,9 @@ padding: 10px 0;
     margin-top: 25px;
 }
 
-.title-description h4, .title-additional-information h4{
- font-weight: 300;
-color: #666;
-font-size: 20px;}
+.title-description h4,
+.title-additional-information h4 {
+    font-weight: 300;
+    color: #666;
+    font-size: 20px;
+}

@@ -1,26 +1,7 @@
-//Toggle of infomation product
-
-// Toggle title
-const toggleDescription = document.querySelector(".title-description")
-const toggleAdditionalInformation = document.querySelector(".title-additional-information")
-
-
-// Toggle Text
-const contentDescription = document.querySelector(".text-description")
-const contentAdditionalInformation = document.querySelector(".text-additional-information")
-
-
-//funciones Toggle
-toggleDescription.addEventListener("click", ()=> {
-    contentDescription.classList.toggle("hidden");
-});
-toggleAdditionalInformation.addEventListener("click", ()=> {
-    contentAdditionalInformation.classList.toggle("hidden");
-});
-
+document.addEventListener("DOMContentLoaded", function () {
 
 // JSON y FETCH
-document.addEventListener("DOMContentLoaded", function () {
+
     // Ruta al archivo JSON
     const jsonFilePath = "Json/productos.json";
   
@@ -53,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
               <img src="${producto.imagen}" alt="${producto.nombre}">
             </div>
             <div class="container-details-product">
+            <!-- Aquí puedes agregar la sección del color -->
+            <div class="form-group">
+                <label for="colour">Color:</label>
+                <select name="colour" id="colour">
+                    <option disabled selected value="">Escoje una opcion</option>
+                    ${producto.colores.map(color => `<option value="${color}">${color}</option>`).join('')}
+                </select>
+            </div>
             </div>
             <div class="container-price"> <p>${producto.precio}</p>
             </div>
@@ -75,6 +64,26 @@ document.addEventListener("DOMContentLoaded", function () {
   
           // Agregar el producto al contenedor
           productosContainer.innerHTML += productoHTML;
+          //Toggle of infomation product
+
+// Toggle title
+const toggleDescription = document.querySelector(".title-description")
+const toggleAdditionalInformation = document.querySelector(".title-additional-information")
+
+
+// Toggle Text
+const contentDescription = document.querySelector(".text-description")
+const contentAdditionalInformation = document.querySelector(".text-additional-information")
+
+
+//funciones Toggle
+toggleDescription.addEventListener("click", ()=> {
+    contentDescription.classList.toggle("hidden");
+});
+toggleAdditionalInformation.addEventListener("click", ()=> {
+    contentAdditionalInformation.classList.toggle("hidden");
+});
+
         });
       })
       .catch(error => {
