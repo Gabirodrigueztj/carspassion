@@ -18,7 +18,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 8%;
+    padding: 30px;
 }
 
 .gallery {
@@ -30,11 +30,18 @@ h2 {
     width: 100%;
 }
 
-img {
-    padding: 3px;
-    width: 450px;
-    height: 600px;
-    object-fit: cover;
+.banner {
+    max-width: 100%; /* La imagen no superará el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center; /* Centra el contenido del contenedor */
+}
+
+.banner img {
+    width: 50%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 header {
@@ -45,34 +52,37 @@ header {
 }
 
 .container-title {
-    padding: 30px;
+    margin-left: 25px;
+    font-size: 50px;
+    padding: 10px;
     background-color: #eee;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     color: #222;
 }
 
 .container-img {
-    background-color: #f7f7f9;
+    flex: 1; /* Toma el 50% del espacio disponible en el contenedor */
+    margin-right: -150px; /* Ajusta el margen entre la imagen y los detalles del producto */
+}
+#Car-Photo {
+    flex: 1;
+    margin-left: 30px;
+    height: 500px;
+    width: 500px;
+    object-fit: cover; /* Puede usar 'contain' si desea que toda la imagen esté visible */
+    object-position: center top; /* Ajusta según la posición que desees mostrar */
 }
 
-.container-info-product {
-    flex: 2;
+.container-details-product{
+flex: 1;
+
+}
+
+.product-container {
     display: flex;
-    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
 }
 
-.container-price {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e4e4e4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container-price span {
-    font-size: 24px;
-    font-weight: 300;
-}
 
 .container-details-product {
     padding: 30px 0;
@@ -139,7 +149,19 @@ header {
 
 .container-additional-information {
     display: flex;
+    margin-top: 40px;
     flex-direction: column;
+}
+
+.container-price {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e4e4e4;
+    
+}
+
+.container-price span {
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .title-description,

@@ -1,13 +1,13 @@
 [
-    {
-      "id": 1,
-      "nombre": "Lamborghini Sesto Elemento",
-      "imagen": "Autos/Lamborghini Sesto Elemento/1.png",
-      "precio": "USD 2.500.000",
-      "colores": ["blanco", "negro", "rojo", "azul"],
-      "descripcion": "Lorem ipsum dolor sit amet...",
-      "informacion_adicional": "Información adicional sobre el vehículo..."
-    },
+  {
+    "id": 1,
+    "nombre": "Lamborghini Sesto Elemento",
+    "imagen": "Autos/Lamborghini Sesto Elemento/1.png",
+    "precio": "USD 2.800.000",
+    "colores": ["gris", "negro", "rojo", "blanco"],
+    "descripcion": "El Lamborghini Sesto Elemento es un superdeportivo de edición limitada que destaca por su diseño aerodinámico y materiales ligeros. Su nombre se traduce como 'sexto elemento', haciendo referencia al carbono, el sexto elemento en la tabla periódica.",
+    "informacion_adicional": "Este automóvil cuenta con un motor V10 de alto rendimiento y un chasis de fibra de carbono. Su producción se limitó a unas pocas unidades, convirtiéndolo en una joya para los amantes de los automóviles de alto rendimiento."
+  },
   {
     "id": 2,
     "nombre": "Honda CRX",
@@ -16,6 +16,15 @@
     "colores": ["azul", "rojo", "amarillo", "verde"],
     "descripcion": "El Honda CRX 1985 es un automóvil compacto y deportivo que ganó popularidad en la década de 1980. Con un diseño aerodinámico y características deportivas, el CRX es un clásico que sigue siendo apreciado por los entusiastas de los automóviles.",
     "informacion_adicional": "El Honda CRX 1985 cuenta con un motor eficiente, diseño ligero y una experiencia de conducción divertida. Perfecto para aquellos que buscan un clásico con estilo y rendimiento."
+  },
+  {
+    "id": 3,
+    "nombre": "Mercedes-Benz SL65 AMG Black Series 2009",
+    "imagen": "Autos/Mercedes-Benz SL65 AMG Black Series 2009/1.png",
+    "precio": "USD 300,000",
+    "colores": ["negro", "plata", "blanco", "rojo"],
+    "descripcion": "El Mercedes-Benz SL65 AMG Black Series 2009 es un descapotable de alto rendimiento diseñado por AMG, la división de alto rendimiento de Mercedes-Benz. Con un motor V12 biturbo, este automóvil ofrece un equilibrio impresionante entre lujo y rendimiento.",
+    "informacion_adicional": "El Black Series es una versión aún más potente y aerodinámica del SL65 AMG. Cuenta con mejoras en el motor, suspensión y diseño exterior, haciéndolo una opción atractiva para los entusiastas de los automóviles deportivos de lujo."
   }
 
   ]

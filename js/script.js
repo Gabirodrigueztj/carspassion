@@ -22,21 +22,13 @@ function cargarDetallesDelProducto(productId) {
                 const productoDetalleContainer = document.getElementById("productos-container");
                 const productoHTML = `
             <div class="container-title"><h3>${producto.nombre}</h3></div>
+            <div class="product-container">
             <div class="container-img">
-              <img src="${producto.imagen}" alt="${producto.nombre}">
+              <img src="${producto.imagen}" alt="${producto.nombre}" id="Car-Photo">
             </div>
             <div class="container-details-product">
             <!-- Aquí puedes agregar la sección del color -->
-            <div class="form-group">
-                <label for="colour">Color:</label>
-                <select name="colour" id="colour">
-                    <option disabled selected value="">Escoje una opcion</option>
-                    ${producto.colores.map(color => `<option value="${color}">${color}</option>`).join('')}
-                </select>
-            </div>
-            </div>
-            <div class="container-price"> <p>${producto.precio}</p>
-            </div>
+            
             <div class="container-description">
               <div class="title-description">
                 <h4>Descripción del vehículo</h4>
@@ -47,10 +39,18 @@ function cargarDetallesDelProducto(productId) {
 
               <div class="container-additional-information">
                 <div class="title-additional-information"><h4>Informacion adicional</h4></div>
-                <div class="text-additional-information"><p>${producto.informacion_adicional}</p></div>
+                <div class="text-additional-information">
+                                <div class="container-price"> 
+                                    <h4>Precio de lanzamiento</h4>
+                                    <p>${producto.precio}</p>
+                                 </div>
+                <p>${producto.informacion_adicional}</p></div>
                 </div>
-
+            </div>
             
+            
+
+            </div>
             </div>
 
             <div class="container">
@@ -68,6 +68,26 @@ function cargarDetallesDelProducto(productId) {
                 <a href="Autos/${producto.nombre}/4.png" data-lightbox="models"  data-title="${producto.nombre}">
                     <img src="Autos/${producto.nombre}/4.png" alt="">
                 </a>
+                
+
+
+            </div>
+
+            <div class="gallery">
+
+                <a href="Autos/${producto.nombre}/5.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/5.png" alt="">
+                </a>
+                <a href="Autos/${producto.nombre}/6.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/6.png" alt="">
+                </a>
+                <a href="Autos/${producto.nombre}/7.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/7.png" alt="">
+                </a>
+                <a href="Autos/${producto.nombre}/8.png" data-lightbox="models"  data-title="${producto.nombre}">
+                    <img src="Autos/${producto.nombre}/8.png" alt="">
+                </a>
+                
 
 
             </div>
