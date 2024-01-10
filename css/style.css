@@ -1,0 +1,13 @@
+.banner {
+    max-width: 100%; /* La imagen no superará el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: center; /* Centra el contenido del contenedor */
+}
+
+.banner img {
+    width: 50%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
