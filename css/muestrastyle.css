@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+padding-left: 300px;
+padding-right: 300px;
+}
+
 h2 {
     text-align: center;
     font-size: 35px;
@@ -27,7 +32,7 @@ h2 {
 }
 
 .gallery img {
-    width: 100%;
+    width: 98%;
 }
 
 .banner {
@@ -44,6 +49,18 @@ h2 {
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
+.navbar-brand { 
+    width: 370px;
+    margin: auto;
+
+}
+
+.navbar-brand img{
+margin-left: 300px;
+width: 80px;
+height: 60px;
+
+} 
 header {
     display: flex;
     align-items: center;
@@ -62,13 +79,13 @@ header {
 
 .container-img {
     flex: 1; /* Toma el 50% del espacio disponible en el contenedor */
-    margin-right: -150px; /* Ajusta el margen entre la imagen y los detalles del producto */
+    margin-right: -40px; /* Ajusta el margen entre la imagen y los detalles del producto */
 }
 #Car-Photo {
     flex: 1;
     margin-left: 30px;
     height: 500px;
-    width: 500px;
+    width: 900px;
     object-fit: cover; /* Puede usar 'contain' si desea que toda la imagen esté visible */
     object-position: center top; /* Ajusta según la posición que desees mostrar */
 }
@@ -81,6 +98,7 @@ flex: 1;
 .product-container {
     display: flex;
     align-items: flex-start; /* Alinea los elementos en la parte superior */
+    height: 500px;
 }
 
 

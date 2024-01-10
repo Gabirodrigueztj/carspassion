@@ -5,9 +5,48 @@
 }
 
 .banner img {
-    width: 50%; /* La imagen ocupará el 100% del contenedor */
+    width: 30%; /* La imagen ocupará el 100% del contenedor */
     height: auto; /* Mantiene la proporción original de la imagen */
     
     display: block; /* Elimina el espacio adicional debajo de la imagen */
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
+
+/* Estilo del contenedor del carrusel */
+.swiper-container {
+    width: 100%;
+    max-width: 3000px; /* Establece el ancho máximo que prefieras */
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    margin-top: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+  
+  /* Estilo de los slides */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; /* Puedes cambiar el color de fondo según tus preferencias */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilo de las imágenes dentro de los slides */
+  .swiper-slide img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen dentro del slide */
+    max-height: 100%; /* Ajusta el tamaño máximo de la imagen dentro del slide */
+  }
+  
+.navbar-brand { 
+    width: 380px;
+    margin: auto;
+
+}
+
+.navbar-brand img{
+margin-left: 300px;
+width: 80px;
+height: 60px;
+
+} 
