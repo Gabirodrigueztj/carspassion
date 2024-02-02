@@ -37,6 +37,10 @@
     max-width: 100%; /* Ajusta el tamaño máximo de la imagen dentro del slide */
     max-height: 100%; /* Ajusta el tamaño máximo de la imagen dentro del slide */
   }
+
+  .swiper-text {
+    text-align: center;
+  }
   
 .navbar-brand { 
     width: 380px;
