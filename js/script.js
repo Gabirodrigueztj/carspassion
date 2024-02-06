@@ -29,6 +29,11 @@ function cargarDetallesDelProducto(productId) {
             <div class="container-details-product">
             <!-- Aquí puedes agregar la sección del color -->
             
+            <div class="container-price"> 
+                                    <h4>Precio de lanzamiento</h4>
+                                    <p>${producto.precio}</p>
+                                 </div>
+
             <div class="container-description">
               <div class="title-description">
                 <h4>Descripción del vehículo</h4>
@@ -37,16 +42,17 @@ function cargarDetallesDelProducto(productId) {
                 <p>${producto.descripcion}</p>
               </div>
 
-              <div class="container-additional-information">
-                <div class="title-additional-information"><h4>Informacion adicional</h4></div>
-                <div class="text-additional-information">
-                                <div class="container-price"> 
-                                    <h4>Precio de lanzamiento</h4>
-                                    <p>${producto.precio}</p>
-                                 </div>
-                <p>${producto.informacion_adicional}</p></div>
+                
+                    <div class="title-additional-information">
+                        <h4>Informacion adicional</h4>
+                    </div>
+                        <div class="text-additional-information">
+                            
+                            <p>${producto.informacion_adicional}</p>
+                            
+                        </div>
+                    </div>
                 </div>
-            </div>
             
             
 

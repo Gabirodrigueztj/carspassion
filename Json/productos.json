@@ -25,7 +25,17 @@
     "colores": ["negro", "plata", "blanco", "rojo"],
     "descripcion": "El Mercedes-Benz SL65 AMG Black Series 2009 es un descapotable de alto rendimiento diseñado por AMG, la división de alto rendimiento de Mercedes-Benz. Con un motor V12 biturbo, este automóvil ofrece un equilibrio impresionante entre lujo y rendimiento.",
     "informacion_adicional": "El Black Series es una versión aún más potente y aerodinámica del SL65 AMG. Cuenta con mejoras en el motor, suspensión y diseño exterior, haciéndolo una opción atractiva para los entusiastas de los automóviles deportivos de lujo."
-  }
+  },
 
+  {
+    "id": 4,
+    "nombre": "Acura Integra Type R 1997",
+    "imagen": "Autos/Acura Integra Type R 1997/1.png",
+    "precio": "USD 25,000",
+    "colores": ["blanco", "negro", "rojo", "azul"],
+    "descripcion": "El Acura Integra Type R 1997 es un icónico automóvil deportivo compacto que se destacó por su rendimiento y manejo ágil. Diseñado por la división de alto rendimiento de Acura, el Type R representa la esencia de los vehículos deportivos orientales.",
+    "informacion_adicional": "El Integra Type R de 1997 cuenta con un motor DOHC VTEC de 1.8 litros, tracción delantera y una transmisión manual de 5 velocidades. Su ligero peso y ajustes de suspensión específicos para el Type R brindan una experiencia de conducción emocionante."
+  }
+  
   ]
   

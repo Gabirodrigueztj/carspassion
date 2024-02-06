@@ -5,10 +5,41 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    position: relative; /* Importante para posicionar correctamente el seudoelemento */
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/media/logo-cars-passion.png');
+    background-size: contain;
+    background-size: 300px;
+    background-repeat: repeat;
+    background-position: center;
+    opacity: 0.09;
+    filter: blur(10px);
+    z-index: -1; /* Asegura que el seudoelemento esté detrás del contenido */
+  }
+  
 main {
 padding-left: 300px;
 padding-right: 300px;
 }
+.descripcion-car-catalogo {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 25px;
+} 
 
 h2 {
     text-align: center;
@@ -39,12 +70,12 @@ h2 {
     max-width: 100%; /* La imagen no superará el ancho del contenedor */
     margin: 0 auto; /* Centra el contenedor en la página */
     text-align: center; /* Centra el contenido del contenedor */
+    padding-bottom: 40px;
 }
 
 .banner img {
-    width: 50%; /* La imagen ocupará el 100% del contenedor */
+    width: 30%; /* La imagen ocupará el 100% del contenedor */
     height: auto; /* Mantiene la proporción original de la imagen */
-    
     display: block; /* Elimina el espacio adicional debajo de la imagen */
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
@@ -83,7 +114,7 @@ header {
 }
 #Car-Photo {
     flex: 1;
-    margin-left: 30px;
+    margin-left: -30px;
     height: 500px;
     width: 900px;
     object-fit: cover; /* Puede usar 'contain' si desea que toda la imagen esté visible */
@@ -163,6 +194,7 @@ flex: 1;
     flex-direction: column;
     border-bottom: 1px solid #e4e4e4;
     padding: 10px 0;
+    padding-left: 5px;
 }
 
 .container-additional-information {
@@ -205,4 +237,8 @@ flex: 1;
     font-weight: 300;
     color: #666;
     font-size: 20px;
+}
+
+.productos-container {
+text-align: center;
 }
