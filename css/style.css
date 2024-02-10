@@ -20,7 +20,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(carspassion/media/logos/logo-cars-passion.png);
+  background-image: url('../media/logos/logo-cars-passion.png');
   background-size: contain;
   background-size: 300px;
   background-repeat: repeat;
