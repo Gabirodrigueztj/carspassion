@@ -15,7 +15,7 @@ body {
   
 
   body::before {
-    background-image: url('/media/logos/logo-cars-passion.png');
+    background-image: url('../media/logos/logo-cars-passion.png');
     background-size: contain;
     background-size: 300px;
     background-repeat: repeat;
