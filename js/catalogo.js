@@ -30,6 +30,6 @@ function cargarProductos(jsonFilePath) {
 }
 
 function mostrarDetalles(productId) {
-    // Redirigir a la página de detalles del producto con el ID correspondiente
+
     window.location.href = `muestra.html?id=${productId}`;
 }

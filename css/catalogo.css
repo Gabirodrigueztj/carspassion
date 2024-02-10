@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    position: relative; /* Importante para posicionar correctamente el seudoelemento */
+    position: relative; 
   }
   
 
@@ -28,7 +28,7 @@ body {
     height: 100%;
     opacity: 0.09;
     filter: blur(10px);
-    z-index: -1; /* Asegura que el seudoelemento esté detrás del contenido */
+    z-index: -1; 
   }
   
 main {
@@ -61,17 +61,17 @@ padding-right: 300px;
 }
 
 .banner {
-    max-width: 100%; /* La imagen no superará el ancho del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    text-align: center; /* Centra el contenido del contenedor */
+    max-width: 100%; 
+    margin: 0 auto; 
+    text-align: center; 
     padding-bottom: 40px;
 }
 
 .banner img {
-    width: 30%; /* La imagen ocupará el 100% del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    display: block; /* Elimina el espacio adicional debajo de la imagen */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    width: 30%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .navbar-brand { 
@@ -91,12 +91,12 @@ height: 60px;
     }
 
     img {
-        /* Estilos por defecto de la imagen */
-        transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+        
+        transition: transform 0.3s ease-in-out; 
     }
     img:hover {
-        transform: scale(1.02); /* Ejemplo: agranda la imagen en un 10% */
-        /* Otros estilos que desees aplicar al pasar el cursor sobre la imagen */
+        transform: scale(1.02); 
+      
     }
     
     
